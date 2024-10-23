@@ -1,54 +1,92 @@
 @charset "UTF-8";
-/***** bleakpointes ******/
 
-/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*Importação de font (google fonts)*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* CSS reset '(compatibilizar com todos navegadores*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 
-/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*layout */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1 em;
+    /*1em = 100% (tamanho padrão)*/
+}
 
-/*Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+.container {
+    margin: 0 auto;
+    /*centralizar o bloco*/
+}
+
+/*Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* cabeçalho*/
+header {
+    height: 70px;
+    background-color: #a53e3e;
+}
+
+#logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+
+}
+
+/*Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
-    body {
-        background-color: #00ff00;
+
+    /*cabeçalho*/
+    #logo img {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .container {
+        max-width: 540px;
+        border-color: #ffff00;
     }
 }
 
 
 
-    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-    /* Tablet Portait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 768px) {
-    body {
-        background-color: #ffff00;
+/* Tablet Portait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+#logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
 
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 992px) {
+    #logo img {
+        margin: 10px 0px 0px 0px;
+    }
+
+    .container {
+        max-width: 540px;
+        border-color: #ffff00;
     }
 }
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-    /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-    @media (min-width: 992px) {
-        body {
-            background-color: #00ffff;
-        
-        }}
-        
-    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-    /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Pcs / Notbooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width:1200px){
+    
+}
 
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-    /* Pcs / Notbooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/* Telas Fullhd / 4k / Smarttv>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (min-width: 1360px) {}
 
-    /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-
-    /* Telas Fullhd / 4k / Smarttv>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-    @media (min-width: 576px) {
-        body {
-            background-color: #4b0082;
-        color: floralwhite;
-        }
-
-    }
-    /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
