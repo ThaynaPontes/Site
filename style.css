@@ -67,12 +67,13 @@ header {
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 992px) {
+    /*cabeçalho*/
     #logo img {
         margin: 10px 0px 0px 0px;
     }
 
     .container {
-        max-width: 540px;
+        max-width: 960px;
         border-color: #ffff00;
     }
 }
@@ -81,12 +82,34 @@ header {
 
 /* Pcs / Notbooks >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width:1200px){
-    
+    .container {
+        max-width: 1140px;
+        background-color: #ff009d;
+    }
+    header {
+        height: 150px;
+    }
+    #logo img {
+        width: 128px;
+        height: 128px;
+    }
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* Telas Fullhd / 4k / Smarttv>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (min-width: 1360px) {}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1360px;
+        background-color: #a53e3e;
+    }
+    header {
+        height: 195px;
+    }
+    #logo img {
+        width: 176px;
+        height: 176px;
+    }
+}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
