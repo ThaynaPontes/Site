@@ -34,18 +34,15 @@ body {
 }
 
 .botao {
-  
-  text-decoration: none;
-  color: var(--branco);
-  font-size: 1.3em;
-  font-weight: 700;
-  background-color: var(--vermelho);
-  width: 200px;
-  padding: 10px 0px;
-  border: 2px solid var(--marrom);
-  border-radius: 25;
-  align-self: center;
-  margin-top: 25px;
+    text-decoration: none;
+    color: var(--azul);
+    font-size: 1.3em;
+    font-weight: 1000;
+    align-self: center;
+    padding: 15px 10px;
+    border: 2px solid var(--laranja);
+    border-radius: 26px;
+    margin-top: 25px;
 }
 
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
