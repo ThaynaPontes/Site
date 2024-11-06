@@ -35,7 +35,7 @@ body {
 
 .botao {
     text-decoration: none;
-    color: var(--marrom);
+    color: var(--branco);
     font-size: 1.3em;
     font-weight: 1000;
     align-self: center;
@@ -77,7 +77,7 @@ label {
     position: fixed;
     top: 5px;
     right: 15px;
-    color:var(--marrom);
+    color:var(--branco);
     /*0.5 = 50% de transparencia 0 a 1(100%) */
 
 }
@@ -301,7 +301,7 @@ main h2{
      }
      
      nav ul li a:hover {
-        color: var (--vermelho);
+        background-color: var (--vermelho);
      }
 
 }
