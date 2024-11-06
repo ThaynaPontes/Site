@@ -35,12 +35,12 @@ body {
 
 .botao {
     text-decoration: none;
-    color: var(--azul);
+    color: var(--marrom);
     font-size: 1.3em;
     font-weight: 1000;
     align-self: center;
     padding: 15px 10px;
-    border: 2px solid var(--laranja);
+    border: 2px solid var(--branco);
     border-radius: 26px;
     margin-top: 25px;
 }
@@ -53,8 +53,8 @@ header {
 
 #logo img {
 
-    width: 90px; 
-    height: 50px;
+    width: 70px; 
+    height: 60px;
     margin: 0px 0px 0px 0px;
     
 }
@@ -77,7 +77,7 @@ label {
     position: fixed;
     top: 5px;
     right: 15px;
-    color: rgba(0, 0, 0, 0.5);
+    color:var(--marrom);
     /*0.5 = 50% de transparencia 0 a 1(100%) */
 
 }
@@ -85,13 +85,13 @@ label {
 nav ul {
     height: 100vh;
     /* 100vh = 100% da altura da tela */
-    background-color: var(--marrom);
+    background-color:rgba(165, 62, 62, 0.5) ;
     list-style: none;
     /*remover bullets*/
     width: 50%;
     position: fixed;
     top: 80px;
-    right: -800px;
+    right: -400px;
     transition: all 0.5s;
 }
 
@@ -107,6 +107,8 @@ nav ul li a {
     text-decoration: none;
     /*remover o sublinhado*/
 }
+
+
 
 /* Banner*/
 main{
@@ -141,8 +143,8 @@ main h2{
 
     /*cabeçalho*/
     #logo img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     
        
     
@@ -158,12 +160,38 @@ main h2{
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* Tablet Portait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+
+@media (min-width: 768px) {
+    /*cabeçalho */
+    .container {
+     max-width: 720px;            /*Tamanho max */
+    /*background-color: #FFA500;*/
+ }
+     header {
+         height: 60px; /*Altura*/
+     }
+
 #logo img {
     width: 120px;
     height: 110px;
     margin: 50px 0px 0px 0px;
+}
+nav ul {
+    top:60px;
+    width: 65%;
+    right: -70%;
 
 }
+/*Ajuste do banner*/
+main h1{
+    font-size: 4em;
+}
+main h2{
+    font-size: 2em;
+    margin-top: 15px;
+
+}
+
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -199,8 +227,38 @@ main h2{
     }
 
     #logo img {
-        width: 128px;
-        height: 128px;
+         width: 90px;
+        height: 90px;
+        margin: 0px 0px 0px 0px;
+    }
+    .container{    
+        max-width: 1140px; /*Tamanho max */
+       /* background-color: #FFA500; Cor*/
+   }
+   /*transformaçã do menu*/
+   label{
+    display: none;
+   }
+   nav ul{
+    width: 100%;
+    height: auto;
+    position: static;
+    background-color: transparent; /*remover a cor do background-color*/
+   }
+   nav ul li{
+    float: left;
+    border: 0;
+    }
+        nav ul li a{
+    color: var(--branco)
+
+    }
+    nav ul li a:hover {
+    color: var(--vermelho);
+    }
+    /*Ajuste do banner*/
+    main h1{
+    font-size: 4em;
     }
 }
 
@@ -217,8 +275,8 @@ main h2{
     }
 
     #logo img {
-        width: 176px;
-        height: 176px;
+        width: 150px;
+        height: 150px;
     }
     
     /*transformação do menu*/
@@ -243,8 +301,7 @@ main h2{
      }
      
      nav ul li a:hover {
-        color: var ( #ff0000)
+        color: var (--vermelho);
      }
-}
 
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+}
