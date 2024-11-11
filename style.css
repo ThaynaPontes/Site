@@ -26,11 +26,12 @@ body {
 }
 
 .container {
-    margin: 0 auto;/*centralizar o bloco*/
+    margin: 0 auto;
+    /*centralizar o bloco*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .botao {
@@ -46,17 +47,17 @@ body {
 }
 
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
- /* cabeçalho*/
+/* cabeçalho*/
 header {
     height: 80px;
 }
 
 #logo img {
 
-    width: 70px; 
+    width: 70px;
     height: 60px;
     margin: 0px 0px 0px 0px;
-    
+
 }
 
 
@@ -77,7 +78,7 @@ label {
     position: fixed;
     top: 5px;
     right: 15px;
-    color:var(--branco);
+    color: var(--marrom);
     /*0.5 = 50% de transparencia 0 a 1(100%) */
 
 }
@@ -85,7 +86,7 @@ label {
 nav ul {
     height: 100vh;
     /* 100vh = 100% da altura da tela */
-    background-color:rgba(165, 62, 62, 0.5) ;
+    background-color: rgba(165, 62, 62, 0.5);
     list-style: none;
     /*remover bullets*/
     width: 50%;
@@ -103,7 +104,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--branco);
+    color: var(--marrom);
     text-decoration: none;
     /*remover o sublinhado*/
 }
@@ -111,7 +112,7 @@ nav ul li a {
 
 
 /* Banner*/
-main{
+main {
     height: 30vh;
     background: url(img/banner.jpg);
     background-size: cover;
@@ -120,20 +121,22 @@ main{
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
+
 
 }
 
-main h1,h2 {
+main h1,
+h2 {
     color: var(--marrom);
-    text-shadow: #000 0.05em 0.05em 0.05em; /*sombra*/
+    text-shadow: #000 0.05em 0.05em 0.05em;
+    /*sombra*/
 }
 
 main h1 {
     font-size: 2em;
 }
 
-main h2{
+main h2 {
     font-size: 1em;
 }
 
@@ -145,16 +148,14 @@ main h2{
     #logo img {
         width: 80px;
         height: 80px;
-    
-       
-    
     }
-
     .container {
         max-width: 700px;
-        
-
     }
+    /* Banner*/
+main {
+    height: 60vh;
+}
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -162,36 +163,47 @@ main h2{
 /* Tablet Portait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
 @media (min-width: 768px) {
+
     /*cabeçalho */
     .container {
-     max-width: 720px;            /*Tamanho max */
-    /*background-color: #FFA500;*/
- }
-     header {
-         height: 60px; /*Altura*/
-     }
+        max-width: 720px;
+        /*Tamanho max */
+        /*background-color: #FFA500;*/
+    }
 
-#logo img {
-    width: 120px;
-    height: 110px;
-    margin: 50px 0px 0px 0px;
+    header {
+        height: 80px;
+        /*Altura*/
+    }
+
+    #logo img {
+        width: 120px;
+        height: 110px;
+        margin: 50px 0px 0px -20px;
+    }
+
+    nav ul {
+        top: 60px;
+        width: 65%;
+        right: -70%;
+
+    }
+
+    /*Ajuste do banner*/
+    main h1 {
+        font-size: 4em;
+    }
+
+    main h2 {
+        font-size: 2em;
+        margin-top: 15px;
+    }
+ /* Banner*/
+main {
+    height: 25vh; 
 }
-nav ul {
-    top:60px;
-    width: 65%;
-    right: -70%;
 
 }
-/*Ajuste do banner*/
-main h1{
-    font-size: 4em;
-}
-main h2{
-    font-size: 2em;
-    margin-top: 15px;
-
-}
-
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -200,17 +212,19 @@ main h2{
 
     /*cabeçalho*/
     #logo img {
-        width: 160px;
-        height: 150px;
-        margin: 100px 0px 0px 0px;
+        width: 120px;
+        height: 100px;
+        margin: 25px 0px 0px -50px;
     }
 
     .container {
         max-width: 900px;
-        
-    }
 
-    
+    }
+/* Banner*/
+main {
+    height: 50vh;
+}
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -219,46 +233,54 @@ main h2{
 @media (min-width:1200px) {
     .container {
         max-width: 1140px;
-        
+
     }
 
     header {
-        height: 150px;
+        height: 500px;
     }
 
     #logo img {
-         width: 90px;
+        width: 90px;
         height: 90px;
         margin: 0px 0px 0px 0px;
     }
-    .container{    
-        max-width: 1140px; /*Tamanho max */
-       /* background-color: #FFA500; Cor*/
-   }
-   /*transformaçã do menu*/
-   label{
-    display: none;
-   }
-   nav ul{
-    width: 100%;
-    height: auto;
-    position: static;
-    background-color: transparent; /*remover a cor do background-color*/
-   }
-   nav ul li{
-    float: left;
-    border: 0;
-    }
-        nav ul li a{
-    color: var(--branco)
 
+
+    /*transformaçã do menu*/
+    label {
+        display: none;
     }
+
+    nav ul {
+        width: 100%;
+        height: auto;
+        position: static;
+        background-color: transparent;
+        /*remover a cor do background-color*/
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+
+    nav ul li a {
+        color: var(--branco)
+    }
+
     nav ul li a:hover {
-    color: var(--vermelho);
+        color: var(--vermelho);
     }
+
     /*Ajuste do banner*/
-    main h1{
-    font-size: 4em;
+    main h1 {
+        font-size: 4em;
+    }
+
+    /* Banner*/
+    main {
+        height: 70vh;
     }
 }
 
@@ -278,30 +300,32 @@ main h2{
         width: 150px;
         height: 150px;
     }
-    
+
     /*transformação do menu*/
     label {
         display: none;
     }
-    nav ul{
+
+    nav ul {
         width: 100%;
         height: auto;
         position: static;
-        background-color: transparent; /* remover a cor do background*/
+        background-color: transparent;
+        /* remover a cor do background*/
 
-     }
-     
-     nav ul li {
+    }
+
+    nav ul li {
         float: left;
         border: 0;
-     }
+    }
 
-     nav ul li a {
+    nav ul li a {
         color: #a53e3e;
-     }
-     
-     nav ul li a:hover {
+    }
+
+    nav ul li a:hover {
         background-color: var (--vermelho);
-     }
+    }
 
 }
