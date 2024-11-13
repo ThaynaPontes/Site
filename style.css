@@ -46,6 +46,8 @@ body {
     margin-top: 25px;
 }
 
+/* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
 /*Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* cabeçalho*/
 header {
@@ -57,9 +59,7 @@ header {
     width: 70px;
     height: 60px;
     margin: 0px 0px 0px 0px;
-
 }
-
 
 #check {
     display: none;
@@ -109,12 +109,10 @@ nav ul li a {
     /*remover o sublinhado*/
 }
 
-
-
 /* Banner*/
 main {
     height: 30vh;
-    background: url(img/banner.jpg);
+    background: url(img/banner.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -140,6 +138,73 @@ main h2 {
     font-size: 1em;
 }
 
+/***********destaque*****/
+#destaque {
+    background: url(img/backgroud.jpg);
+    background-size: cover;
+    background-position: center;
+    /*espaçamento interno para não encostar na borna da tela do dispositivo*/
+    padding: 50px 15px;
+}
+
+/* Atenção !!! Organizando o container após o destaque o estilo é aplicado apenas ao container da seção de destaque*/
+#destaque .container {
+    flex-direction: row;
+}
+
+#imagemDestaque {
+    margin-right: 50px;
+}
+
+#imagemDestaque img {
+    width: 256px;
+    height: 256px;
+}
+
+/*Para esconder a imagem usamos display: "none" no container da imagem | Para exibir novamente em telas maiores, 
+usamos "display: block" */
+
+/*#imagemDestaque {
+    display: none;
+}*/
+
+#imagemDestaque img {
+    width: 200px;
+    height: 200px;
+    /*arredondar uma imagem quadrada*/
+    border-radius: 50%;
+}
+
+#textoDestaque {
+    color: var(--branco);
+}
+
+#textoDestaque h2 {
+    margin-bottom: 20px;
+
+}
+
+/* Atenção!!! Detalhe do sinal ">" ref.ao elemento imediato*/
+#textoDestaque>p {
+    margin-bottom: 15px;
+    /*para deixar o texto colorido é só colocar "color: var ...." dentro do destaque p*/
+}
+
+.topicos {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.topicos img {
+    margin-right: 10px;
+}
+
+.topicos p {
+    font-weight: 600;
+}
+
+/* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 /*Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
@@ -149,13 +214,20 @@ main h2 {
         width: 80px;
         height: 80px;
     }
+
     .container {
         max-width: 700px;
     }
+
     /* Banner*/
-main {
-    height: 60vh;
-}
+    main {
+        height: 60vh;
+    }
+     /************Destaque***********/
+     #imagemDestaque img {
+        width: 440px;
+        height: 440px;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -198,10 +270,16 @@ main {
         font-size: 2em;
         margin-top: 15px;
     }
- /* Banner*/
-main {
-    height: 25vh; 
-}
+
+    /* Banner*/
+    main {
+        height: 25vh;
+    }
+    /************Destaque***********/
+    #imagemDestaque img {
+        width: 440px;
+        height: 440px;
+    }
 
 }
 
@@ -221,10 +299,16 @@ main {
         max-width: 900px;
 
     }
-/* Banner*/
-main {
-    height: 50vh;
-}
+
+    /* Banner*/
+    main {
+        height: 50vh;
+    }
+     /******Destaque***********/
+     #destaque {
+        /* O código abaixo fixa o banner (efeito paralax)*/
+        background-attachment: fixed;
+    }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -325,7 +409,6 @@ main {
     }
 
     nav ul li a:hover {
-        background-color: var (--vermelho);
+        color: #a53e3e;
     }
-
 }
