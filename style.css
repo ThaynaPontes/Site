@@ -45,10 +45,9 @@ body {
     border-radius: 26px;
     margin-top: 25px;
 }
-
 /* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-/*Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+/*Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /* cabeçalho*/
 header {
     height: 80px;
@@ -59,7 +58,9 @@ header {
     width: 70px;
     height: 60px;
     margin: 0px 0px 0px 0px;
+
 }
+
 
 #check {
     display: none;
@@ -104,28 +105,28 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--marrom);
+    color: var(--branco);
     text-decoration: none;
     /*remover o sublinhado*/
 }
 
+
+
 /* Banner*/
 main {
     height: 30vh;
-    background: url(img/banner.png);
+    background: url(img/ia.png);
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
-
 }
 
 main h1,
 h2 {
-    color: var(--marrom);
+    color: var(--branco);
     text-shadow: #000 0.05em 0.05em 0.05em;
     /*sombra*/
 }
@@ -137,10 +138,9 @@ main h1 {
 main h2 {
     font-size: 1em;
 }
-
 /***********destaque*****/
 #destaque {
-    background: url(img/backgroud.jpg);
+    background-color: #a53e3e;
     background-size: cover;
     background-position: center;
     /*espaçamento interno para não encostar na borna da tela do dispositivo*/
@@ -150,6 +150,7 @@ main h2 {
 /* Atenção !!! Organizando o container após o destaque o estilo é aplicado apenas ao container da seção de destaque*/
 #destaque .container {
     flex-direction: row;
+    align-items: center;
 }
 
 #imagemDestaque {
@@ -169,25 +170,28 @@ usamos "display: block" */
 }*/
 
 #imagemDestaque img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     /*arredondar uma imagem quadrada*/
     border-radius: 50%;
 }
 
 #textoDestaque {
     color: var(--branco);
+    font-size: 0.8em;
 }
 
 #textoDestaque h2 {
     margin-bottom: 20px;
-
+    
 }
 
 /* Atenção!!! Detalhe do sinal ">" ref.ao elemento imediato*/
+
 #textoDestaque>p {
     margin-bottom: 15px;
-    /*para deixar o texto colorido é só colocar "color: var ...." dentro do destaque p*/
+    
+/*para deixar o texto colorido é só colocar "color: var ...." dentro do destaque p*/
 }
 
 .topicos {
@@ -206,6 +210,7 @@ usamos "display: block" */
 
 /* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
+
 /*Smartphone landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 576px) {
 
@@ -214,23 +219,20 @@ usamos "display: block" */
         width: 80px;
         height: 80px;
     }
-
     .container {
         max-width: 700px;
     }
-
     /* Banner*/
-    main {
-        height: 60vh;
-    }
-     /************Destaque***********/
+main {
+    height: 60vh;
+}
+/************Destaque***********/
      #imagemDestaque img {
         width: 440px;
         height: 440px;
     }
 }
-
-/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/*** fim smart ladscape****/
 
 /* Tablet Portait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -270,17 +272,15 @@ usamos "display: block" */
         font-size: 2em;
         margin-top: 15px;
     }
-
-    /* Banner*/
-    main {
-        height: 25vh;
-    }
-    /************Destaque***********/
+ /* Banner*/
+main {
+    height: 25vh; 
+}
+ /************Destaque***********/
     #imagemDestaque img {
         width: 440px;
         height: 440px;
     }
-
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -299,12 +299,11 @@ usamos "display: block" */
         max-width: 900px;
 
     }
-
-    /* Banner*/
-    main {
-        height: 50vh;
-    }
-     /******Destaque***********/
+/* Banner*/
+main {
+    height: 50vh;
+}
+  /******Destaque***********/
      #destaque {
         /* O código abaixo fixa o banner (efeito paralax)*/
         background-attachment: fixed;
