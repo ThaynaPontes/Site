@@ -160,8 +160,8 @@ usamos "display: block" */
 }*/
 
 #imagemDestaque img {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     /*arredondar uma imagem*/
     border-radius: 50%;
 }
@@ -171,7 +171,7 @@ usamos "display: block" */
 }
 
 #textoDestaque h2 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     
 }
 
@@ -217,8 +217,8 @@ usamos "display: block" */
 }
 
 #video iframe{
-    width: 340px;
-    height: 191px;
+    width: 500px;
+    height: 500px;
     margin-top: 20px;
 }
 
