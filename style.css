@@ -114,7 +114,7 @@ nav ul li a {
 /* Banner*/
 main {
     height: 30vh;
-    background: url(img/background.png);
+    background: url(img/banneria.png);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -160,8 +160,8 @@ usamos "display: block" */
 }*/
 
 #imagemDestaque img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     /*arredondar uma imagem*/
     border-radius: 50%;
 }
@@ -178,6 +178,7 @@ usamos "display: block" */
 /* Atenção!!! Detalhe do sinal ">" ref.ao elemento imediato*/
 
 #textoDestaque>p {
+    font-size: 1em;
     margin-bottom: 20px; 
     
 /*para deixar o texto colorido é só colocar "color: var ...." dentro do destaque p*/
@@ -204,7 +205,7 @@ usamos "display: block" */
 }
 
 #sobre {
-    padding: 50px 15px;
+    padding: 30px 15px;
 }
 
 #sobre p{
@@ -217,7 +218,7 @@ usamos "display: block" */
 }
 
 #video iframe{
-    width: 500px;
+    width: 400px;
     height: 500px;
     margin-top: 20px;
 }
