@@ -201,11 +201,13 @@ usamos "display: block" */
 /*O estilo abaixo será aplicado apenas aos container que está subordinado a section "sobre"*/
 
 #sobre.container{
-    flex-direction: column;
+    flex-direction:column;
+    
 }
 
 #sobre {
     padding: 30px 15px;
+
 }
 
 #sobre p{
@@ -214,13 +216,12 @@ usamos "display: block" */
 
 #sobre h2{
     color: var(--marrom);
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
-#video iframe{
-    width: 400px;
-    height: 500px;
-    margin-top: 20px;
+#sobre video {
+    width: 560px;
+    height: 315px;
 }
 
 /* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
@@ -254,6 +255,7 @@ main {
         width: 150px;
         height: 180px;
     }
+    
 }
 /*** fim smart ladscape****/
 
