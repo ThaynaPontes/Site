@@ -9,6 +9,8 @@
     --branco: #fff;
     --marrom: #a53e3e;
     --vermelho: #ff0000;
+    --claro: #efe2d2;
+    --castanho: #d6bbac;
 }
 
 /* CSS reset '(compatibilizar com todos navegadores*/
@@ -23,6 +25,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
     /*1em = 100% (tamanho padrão)*/
+    background-color: #efe2d2;
 }
 
 .container {
@@ -41,7 +44,7 @@ body {
     font-weight: 1000;
     align-self: center;
     padding: 15px 10px;
-    border: 2px solid var(--branco);
+    border: 2px solid var(--claro);
     border-radius: 26px;
     margin-top: 25px;
 }
@@ -55,8 +58,8 @@ header {
 
 #logo img {
 
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     margin: 10px 0px 0px 10px;
 
 }
@@ -126,7 +129,7 @@ main {
 main h1,
 h2 {
     color: var(--branco);
-    text-shadow: #000 0.05em 0.05em 0.05em;
+    text-shadow: #efe2d2 0.05em 0.05em 0.05em;
     /*sombra*/
 }
 
