@@ -11,6 +11,7 @@
     --vermelho: #ff0000;
     --claro: #efe2d2;
     --castanho: #d6bbac;
+    --escuro: #600;
 }
 
 /* CSS reset '(compatibilizar com todos navegadores*/
@@ -58,9 +59,9 @@ header {
 
 #logo img {
 
-    width: 60px;
-    height: 60px;
-    margin: 10px 0px 0px 10px;
+    width: 80px;
+    height: 70px;
+    margin: 0px 0px 0px 0px;
 
 }
 
@@ -129,7 +130,7 @@ main {
 main h1,
 h2 {
     color: var(--branco);
-    text-shadow: #efe2d2 0.05em 0.05em 0.05em;
+    text-shadow: #600 0.05em 0.05em 0.05em;
     /*sombra*/
 }
 
@@ -237,8 +238,8 @@ usamos "display: block" */
     }
     /*cabeçalho*/
     #logo img {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 60px;
     }
    
     /* Banner*/
@@ -279,9 +280,9 @@ main {
     }
 
     #logo img {
-        width: 90px;
-        height: 90px;
-        margin: 25px 0px 0px -10px;
+        width: 80px;
+        height: 80px;
+        margin: 10px 0px 0px -10px;
     }
 
     nav ul {
@@ -318,9 +319,9 @@ main {
 
     /*cabeçalho*/
     #logo img {
-        width: 100px;
-        height: 100px;
-        margin: 30px 0px 0px -50px;
+        width: 80px;
+        height: 80px;
+        margin: 10px 0px 0px -50px;
     }
 
     .container {
