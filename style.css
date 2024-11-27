@@ -168,6 +168,7 @@ usamos "display: block" */
     height: 150px;
     /*arredondar uma imagem*/
     border-radius: 50%;
+    margin: 100px
 }
 
 #textoDestaque {
@@ -176,7 +177,7 @@ usamos "display: block" */
 
 #textoDestaque h2 {
     margin-bottom: 10px;
-    
+    color: #d6bbac;
 }
 
 /* Atenção!!! Detalhe do sinal ">" ref.ao elemento imediato*/
@@ -226,6 +227,31 @@ usamos "display: block" */
 #sobre video {
     width: 560px;
     height: 315px;
+}
+/****** Faixa de destaque ********/
+#faixaDestaque{
+    background-color: #a53e3e;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 15px;
+}
+
+#faixaDestaque .container{
+    flex-direction: column;
+}
+
+#imagemFaixa img {
+    width: 150px;
+    height: 150px;
+    
+}
+#textoFaixa h2{
+    color: var(--castanho);
+    margin-bottom: 15px;
+}
+#textoFaixa p{
+    color: var(--branco);
+    margin-bottom: 50px;
 }
 
 /* Fim | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
@@ -310,6 +336,7 @@ main {
         width: 225px;
         height: 250px;
     }
+    
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -337,6 +364,19 @@ main {
         /* O código abaixo fixa o banner (efeito paralax)*/
         background-attachment: fixed;
     }
+    
+    #faixaDestaque {
+        background-attachment: fixed;
+    }
+
+    #faixaDestaque .container {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    #imagemFaixa img {
+        width: 200px;
+        height: 200px;
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
