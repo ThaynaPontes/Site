@@ -378,6 +378,7 @@ main {
         width: 200px;
         height: 200px;
 }
+}
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -418,7 +419,7 @@ main {
     }
 
     nav ul li a {
-        color: var(--branco)
+        color: var(--branco);
     }
 
     nav ul li a:hover {
@@ -456,6 +457,7 @@ main {
 
 /* Telas Fullhd / 4k / Smarttv>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1400px) {
+    
     .container {
         max-width: 1360px;
     }
@@ -480,7 +482,6 @@ main {
         position: static;
         background-color: transparent;
         /* remover a cor do background*/
-
     }
 
     nav ul li {
@@ -495,4 +496,5 @@ main {
     nav ul li a:hover {
         color: #a53e3e;
     }
+
 }
